@@ -665,11 +665,11 @@ declare module 'PipeWrench-Events' {
   /**
    * Triggered when inventory object context menus are being filled.
    *
-   * @param player The player for which the context menu is being filled.
+   * @param playerNum The local player number for which the context menu is being filled.
    * @param table The context menu to be filled.
    * @param items The items available in the player inventory.
    */
-  export type OnFillInventoryObjectContextMenuListener = (player: IsoPlayer, table: KahluaTable, items: KahluaTable) => void;
+  export type OnFillInventoryObjectContextMenuListener = (playerNum: number, table: KahluaTable, items: KahluaTable) => void;
   /**
    * TODO
    *
