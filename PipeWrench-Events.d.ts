@@ -680,12 +680,12 @@ declare module 'PipeWrench-Events' {
   /**
    * Triggered when world object context menus are being filled.
    *
-   * @param player The player for which the context menu is being filled.
+   * @param playerNum The local player number for which the context menu is being filled.
    * @param context The context menu to be filled.
    * @param worldObjects The world objects available nearby the player.
    * @param test Set to true if called for the purpose of testing for nearby objects.
    */
-  export type OnFillWorldObjectContextMenuListener = (player: IsoPlayer, context: KahluaTable, worldObjects: KahluaTable, test: boolean) => void;
+  export type OnFillWorldObjectContextMenuListener = (playerNum: number, context: KahluaTable, worldObjects: KahluaTable, test: boolean) => void;
   /**
    * Triggered when either a game or a server is being started, or when mods are getting reloaded during a game.
    */
