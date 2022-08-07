@@ -28,11 +28,15 @@ local ____PipeWrench = require("PipeWrench")
 local addEventListener = ____PipeWrench.addEventListener
 local removeEventListener = ____PipeWrench.removeEventListener
 local triggerEvent = ____PipeWrench.triggerEvent
+local LuaEventManager = ____PipeWrench.LuaEventManager
 ____exports.EventEmitter = __TS__Class()
 local EventEmitter = ____exports.EventEmitter
 EventEmitter.name = "EventEmitter"
 function EventEmitter.prototype.____constructor(self, id)
     self.id = id
+    if not Events[id] then
+        LuaEventManager.AddEvent(id)
+    end
 end
 function EventEmitter.prototype.addListener(self, listener)
     addEventListener(self.id, listener)
