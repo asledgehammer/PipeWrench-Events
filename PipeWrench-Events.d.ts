@@ -86,6 +86,8 @@ declare module 'PipeWrench-Events' {
       addListener(listener: L): void;
       /** @param listener The listener to unregister. */
       removeListener(listener: L): void;
+      /** @param params Any parameter to pass. */
+      trigger(...params): void;
   }
   export const acceptedFactionInvite: EventEmitter<AcceptedFactionInviteListener>;
   export const acceptedSafehouseInvite: EventEmitter<AcceptedSafehouseInviteListener>;

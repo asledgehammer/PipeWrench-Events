@@ -27,6 +27,7 @@ local ____exports = {}
 local ____PipeWrench = require("PipeWrench")
 local addEventListener = ____PipeWrench.addEventListener
 local removeEventListener = ____PipeWrench.removeEventListener
+local triggerEvent = ____PipeWrench.triggerEvent
 ____exports.EventEmitter = __TS__Class()
 local EventEmitter = ____exports.EventEmitter
 EventEmitter.name = "EventEmitter"
@@ -38,6 +39,9 @@ function EventEmitter.prototype.addListener(self, listener)
 end
 function EventEmitter.prototype.removeListener(self, listener)
     removeEventListener(self.id, listener)
+end
+function EventEmitter.prototype.trigger(self, ...)
+    triggerEvent(self.id, ...)
 end
 ____exports.acceptedFactionInvite = __TS__New(____exports.EventEmitter, "AcceptedFactionInvite")
 ____exports.acceptedSafehouseInvite = __TS__New(____exports.EventEmitter, "AcceptedSafehouseInvite")
