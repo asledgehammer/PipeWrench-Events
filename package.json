@@ -1,6 +1,6 @@
 {
   "name": "@shughesuk/pipewrench-events",
-  "version": "41.73.1",
+  "version": "41.73.2",
   "description": "",
   "types": "PipeWrench-Events.d.ts",
   "scripts": {
