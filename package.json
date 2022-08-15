@@ -2,10 +2,11 @@
   "name": "@shughesuk/pipewrench-events",
   "version": "41.73.3",
   "description": "",
-  "types": "PipeWrench-Events.d.ts",
   "scripts": {
     "build": "tsc"
   },
+  "main": "./PipeWrench-Events",
+  "types": "./PipeWrench-Events",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/asledgehammer/PipeWrench-Events.git"
