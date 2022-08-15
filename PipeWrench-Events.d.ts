@@ -22,8 +22,8 @@
  * SOFTWARE.
  */
 
-/** @noResolution @noSelfInFile */
-declare module 'PipeWrench-Events' {
+/**  @noSelfInFile */
+declare module '@shughes/pipewrench-events' {
   import {
     se,
     zombie,
@@ -69,7 +69,7 @@ declare module 'PipeWrench-Events' {
     Perk,
     ObjectTooltip,
     java,
-  } from 'PipeWrench';
+  } from '@shughesuk/pipewrench';
   type KahluaTable = se.krka.kahlua.vm.KahluaTable;
   /**
    * EventEmitter is for both vanilla ProjectZomboid event handling and custom events written for PipeWrench.
