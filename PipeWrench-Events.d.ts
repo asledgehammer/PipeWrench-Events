@@ -23,7 +23,7 @@
  */
 
 /**  @noSelfInFile */
-declare module '@shughesuk/pipewrench-events' {
+declare module '@asledgehammer/pipewrench-events' {
   import {
     se,
     zombie,
