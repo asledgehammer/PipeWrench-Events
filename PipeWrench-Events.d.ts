@@ -69,7 +69,7 @@ declare module '@asledgehammer/pipewrench-events' {
     Perk,
     ObjectTooltip,
     java,
-  } from '@shughesuk/pipewrench';
+  } from '@asledgehammer/pipewrench';
   type KahluaTable = se.krka.kahlua.vm.KahluaTable;
   /**
    * EventEmitter is for both vanilla ProjectZomboid event handling and custom events written for PipeWrench.

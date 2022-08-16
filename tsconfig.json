@@ -13,7 +13,7 @@
     "target": "ESNext",
     "types": [
       "lua-types/5.1",
-      "@shughesuk/pipewrench"
+      "@asledgehammer/pipewrench"
     ]
   },
   "tstl": {
